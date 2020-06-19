@@ -1,5 +1,8 @@
 package com.wyw.spring.annotation.service;
 
+import com.wyw.spring.annotation.dao.BookDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,4 +13,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class BookService {
+//    @Qualifier
+    @Autowired(required = false)
+    BookDao bookDao;
 }

@@ -1,5 +1,7 @@
 package com.wyw.spring.annotation.controller;
 
+import com.wyw.spring.annotation.service.BookService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -10,4 +12,11 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class BookController {
+
+    @Autowired
+    BookService bookService;
+
+    public void print() {
+        System.out.println(bookService);
+    }
 }

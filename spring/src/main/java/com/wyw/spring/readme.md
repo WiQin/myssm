@@ -45,3 +45,13 @@ ImportBeanDefinitionRegistrar   手动注册bean容器中  [com.wyw.spring.annot
 
 ##Bean生命周期
 [com.wyw.spring.annotation.MainConfigOfLifeCycle]
+
+##属性赋值
+[com.wyw.spring.annotation.MainConfigOfPropertyValue]
+测试：
+[com.wyw.spring.test.IOCTest_PropertyValue]
+
+
+##自动装配
+
+
