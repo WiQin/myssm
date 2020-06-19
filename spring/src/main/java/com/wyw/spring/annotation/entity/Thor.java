@@ -6,18 +6,18 @@ package com.wyw.spring.annotation.entity;
  * @author wyw
  * @date 2020/06/15
  */
-public class Person {
+public class Thor {
     private String name;
     private Integer age;
 
-    public Person() {
+    public Thor() {
     }
 
-    public Person(Integer age) {
+    public Thor(Integer age) {
         this.age = age;
     }
 
-    public Person(String name, Integer age) {
+    public Thor(String name, Integer age) {
         this.name = name;
         this.age = age;
     }
@@ -40,7 +40,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Thor{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

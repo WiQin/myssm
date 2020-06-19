@@ -2,8 +2,8 @@ package com.wyw.spring.annotation;
 
 import com.wyw.spring.annotation.beandefinition.MyBeanDefinition;
 import com.wyw.spring.annotation.condition.MyCondition;
-import com.wyw.spring.annotation.entity.Color;
-import com.wyw.spring.annotation.entity.Person;
+import com.wyw.spring.annotation.entity.Hammer;
+import com.wyw.spring.annotation.entity.Thor;
 import com.wyw.spring.annotation.factory.ColorFactory;
 import com.wyw.spring.annotation.selector.MyImportSelector;
 import org.springframework.context.annotation.*;
@@ -17,7 +17,7 @@ import org.springframework.context.annotation.*;
  * @date 2020/06/15
  */
 @Configuration
-@Import({Color.class,MyImportSelector.class,MyBeanDefinition.class})
+@Import({Hammer.class,MyImportSelector.class,MyBeanDefinition.class})
 public class MainConfig2 {
 
     /**
@@ -33,9 +33,9 @@ public class MainConfig2 {
      */
     @Scope("prototype")
     @Bean("person")
-    public Person person() {
+    public Thor person() {
         System.out.println("给容器中添加对象");
-        return new Person();
+        return new Thor();
     }
 
     /**
@@ -48,9 +48,9 @@ public class MainConfig2 {
      */
     @Lazy
     @Bean("lazyPerson")
-    public Person lazyPerson() {
+    public Thor lazyPerson() {
         System.out.println("给容器中添加对象");
-        return new Person();
+        return new Thor();
     }
 
     /**
@@ -61,8 +61,8 @@ public class MainConfig2 {
      */
     @Conditional({MyCondition.class})
     @Bean
-    public Person conditionalPerson() {
-        return new Person(30);
+    public Thor conditionalPerson() {
+        return new Thor(30);
     }
 
     /**

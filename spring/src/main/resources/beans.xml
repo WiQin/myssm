@@ -7,7 +7,7 @@
     <!--扫描  只要标注了@Controller  @Service  @Repository  @Component 就会被加载到容器中-->
     <context:component-scan base-package="com.wyw.spring"/>
 
-    <bean id="person" class="com.wyw.spring.annotation.entity.Person">
+    <bean id="thor" class="com.wyw.spring.annotation.entity.Thor">
         <property name="age" value="18"/>
         <property name="name" value="张"/>
     </bean>

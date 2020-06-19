@@ -6,7 +6,7 @@ package com.wyw.spring.annotation.entity;
  * @author wyw
  * @date 2020/06/15
  */
-public class Color {
+public class Hammer {
     private String code;
     private String value;
 }

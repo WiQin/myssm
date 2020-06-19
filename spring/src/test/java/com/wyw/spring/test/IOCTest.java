@@ -2,7 +2,7 @@ package com.wyw.spring.test;
 
 import com.wyw.spring.annotation.MainConfig;
 import com.wyw.spring.annotation.MainConfig2;
-import com.wyw.spring.annotation.entity.Person;
+import com.wyw.spring.annotation.entity.Thor;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -28,18 +28,18 @@ public class IOCTest {
         ApplicationContext applicationContext =new AnnotationConfigApplicationContext(MainConfig2.class);
 
         System.out.println("ioc容器创建完成");
-        Person person = (Person) applicationContext.getBean("person");
-        System.out.println(person);
+        Thor thor = (Thor) applicationContext.getBean("thor");
+        System.out.println(thor);
 
-        Person person2 = (Person) applicationContext.getBean("person");
-        System.out.println(person2);
+        Thor thor2 = (Thor) applicationContext.getBean("thor");
+        System.out.println(thor2);
     }
 
     @Test
     public void test3() {
         ApplicationContext applicationContext =new AnnotationConfigApplicationContext(MainConfig2.class);
         pringBeanName(applicationContext);
-        Map<String, Person> personBeans = applicationContext.getBeansOfType(Person.class);
+        Map<String, Thor> personBeans = applicationContext.getBeansOfType(Thor.class);
         System.out.println(personBeans);
 
     }

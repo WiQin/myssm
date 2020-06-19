@@ -1,6 +1,6 @@
 package com.wyw.spring.annotation.beandefinition;
 
-import com.wyw.spring.annotation.entity.Color;
+import com.wyw.spring.annotation.entity.Hammer;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
@@ -23,7 +23,7 @@ public class MyBeanDefinition implements ImportBeanDefinitionRegistrar {
         //判断容器中是否有
         boolean b = registry.containsBeanDefinition("person");
         if (b) {
-            RootBeanDefinition beanDefinition = new RootBeanDefinition(Color.class);
+            RootBeanDefinition beanDefinition = new RootBeanDefinition(Hammer.class);
             registry.registerBeanDefinition("color",beanDefinition);
         }
 

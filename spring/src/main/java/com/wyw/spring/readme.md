@@ -1,3 +1,4 @@
+## bean注册
 1.bean组件注册
 配置文件方式：<bean><bean/>  [bean.xml]  
 注解：@Bean   [com.wyw.spring.annotation.MainConfig]
@@ -41,3 +42,6 @@ ImportBeanDefinitionRegistrar   手动注册bean容器中  [com.wyw.spring.annot
     2).ImportSelector  导入选择器，返回要导入的组件的全类名数组
     3).ImportBeanDefinitionRegistrar   手动注册bean容器中
 4、FactoryBean
+
+##Bean生命周期
+[com.wyw.spring.annotation.MainConfigOfLifeCycle]

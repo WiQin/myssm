@@ -1,6 +1,6 @@
 package com.wyw.spring.annotation.factory;
 
-import com.wyw.spring.annotation.entity.Color;
+import com.wyw.spring.annotation.entity.Hammer;
 import org.springframework.beans.factory.FactoryBean;
 
 /**
@@ -9,20 +9,20 @@ import org.springframework.beans.factory.FactoryBean;
  * @author wyw
  * @date 2020/06/15
  */
-public class ColorFactory implements FactoryBean<Color> {
+public class ColorFactory implements FactoryBean<Hammer> {
 
     /**
      * 返回一个定义的对象，该对象会被添加到容器中
      * @return
      * @throws Exception
      */
-    public Color getObject() throws Exception {
+    public Hammer getObject() throws Exception {
         System.out.println("获取新bean对象");
-        return new Color();
+        return new Hammer();
     }
 
     public Class<?> getObjectType() {
-        return Color.class;
+        return Hammer.class;
     }
 
     /**

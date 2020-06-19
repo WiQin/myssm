@@ -1,6 +1,6 @@
 package com.wyw.spring.annotation;
 
-import com.wyw.spring.annotation.entity.Person;
+import com.wyw.spring.annotation.entity.Thor;
 import com.wyw.spring.annotation.service.BookService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -43,8 +43,8 @@ public class MainConfig {
      * @return
      */
     @Bean(value = "person")
-    public Person person() {
-        Person person = new Person("li", 20);
-        return person;
+    public Thor person() {
+        Thor thor = new Thor("li", 20);
+        return thor;
     }
 }
