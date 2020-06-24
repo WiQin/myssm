@@ -1,6 +1,7 @@
 package com.wyw.spring.annotation.entity;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 /**
  * ${Description}
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
  * @author wyw
  * @date 2020/06/15
  */
+@Component
 public class Hammer {
 
     /**

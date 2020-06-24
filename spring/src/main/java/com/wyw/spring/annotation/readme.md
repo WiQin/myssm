@@ -53,5 +53,12 @@ ImportBeanDefinitionRegistrar   手动注册bean容器中  [com.wyw.spring.annot
 
 
 ##自动装配
+@Autowired  @Resource  @Inject
+[com.wyw.spring.annotation.MainConfigOfAutowired]
+Aware接口在自定义组件注册spring底层组件
 
+##
+根据当前环境动态激活和切换一系列组件（bean）
+@Profile
+[com.wyw.spring.annotation.MainConfigOfProfile]
 
