@@ -1,8 +1,8 @@
 package com.wyw.spring.annotation.test;
 
-import com.wyw.spring.annotation.MainConfig;
-import com.wyw.spring.annotation.MainConfig2;
-import com.wyw.spring.annotation.entity.Thor;
+import com.wyw.spring.annotation.ioc.MainConfig;
+import com.wyw.spring.annotation.ioc.MainConfig2;
+import com.wyw.spring.annotation.ioc.entity.Thor;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

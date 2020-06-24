@@ -1,6 +1,6 @@
 package com.wyw.spring.annotation.test;
 
-import com.wyw.spring.annotation.MainConfigOfLifeCycle;
+import com.wyw.spring.annotation.ioc.MainConfigOfLifeCycle;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

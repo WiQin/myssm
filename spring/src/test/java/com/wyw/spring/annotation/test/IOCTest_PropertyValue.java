@@ -1,7 +1,7 @@
 package com.wyw.spring.annotation.test;
 
-import com.wyw.spring.annotation.MainConfigOfPropertyValue;
-import com.wyw.spring.annotation.entity.Hammer;
+import com.wyw.spring.annotation.ioc.MainConfigOfPropertyValue;
+import com.wyw.spring.annotation.ioc.entity.Hammer;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
