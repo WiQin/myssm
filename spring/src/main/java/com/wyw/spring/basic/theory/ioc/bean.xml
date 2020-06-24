@@ -1,0 +1,7 @@
+<beans>
+	<bean name = "stu" class = "com.wyw.spring.basic.theory.ioc.Student"/>
+
+    <bean name="tea" class="com.wyw.spring.basic.theory.ioc.Teacher">
+        <property name = "student" ref = "stu"/>
+    </bean>
+</beans>

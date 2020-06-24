@@ -1,4 +1,4 @@
-package com.wyw.spring.test;
+package com.wyw.spring.annotation.test;
 
 import com.wyw.spring.annotation.MainConfigOfPropertyValue;
 import com.wyw.spring.annotation.entity.Hammer;

@@ -1,18 +1,13 @@
-package com.wyw.spring.test;
+package com.wyw.spring.annotation.test;
 
 import com.wyw.spring.annotation.MainConfigOfAutowired;
-import com.wyw.spring.annotation.MainConfigOfPropertyValue;
 import com.wyw.spring.annotation.controller.BookController;
 import com.wyw.spring.annotation.entity.Hammer;
 import com.wyw.spring.annotation.entity.Rogers;
 import com.wyw.spring.annotation.entity.Thor;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.core.env.Environment;
-
-import java.awt.print.Book;
 
 /**
  * ${Description}

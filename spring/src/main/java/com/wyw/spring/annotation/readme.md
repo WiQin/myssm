@@ -7,7 +7,7 @@
 2.自动扫描组件
 配置文件方式：<context:component-scan base-package>
 注解：@ComponentScan 
-测试：[com.wyw.spring.test.IOCTest] 
+测试：[com.wyw.spring.annotation.test.IOCTest] 
 
 3.组件过滤规则（@Filter）  [com.wyw.spring.annotation.MainConfig]
 
@@ -31,7 +31,7 @@ ImportBeanDefinitionRegistrar   手动注册bean容器中  [com.wyw.spring.annot
 工厂bean  调用getObject()方法，将返回的对象放在容器中
 [com.wyw.spring.annotation.factory.ColorFactory]
 [com.wyw.spring.annotation.MainConfig2.colorFactory]
-[com.wyw.spring.test.IOCTest.test4]
+[com.wyw.spring.annotation.test.IOCTest.test4]
 
 总结：
 组件注册方式
@@ -49,7 +49,7 @@ ImportBeanDefinitionRegistrar   手动注册bean容器中  [com.wyw.spring.annot
 ##属性赋值
 [com.wyw.spring.annotation.MainConfigOfPropertyValue]
 测试：
-[com.wyw.spring.test.IOCTest_PropertyValue]
+[com.wyw.spring.annotation.test.IOCTest_PropertyValue]
 
 
 ##自动装配

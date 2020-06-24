@@ -1,4 +1,4 @@
-package com.wyw.spring.test;
+package com.wyw.spring.annotation.test;
 
 import com.wyw.spring.annotation.MainConfigOfProfile;
 import org.junit.Test;
@@ -47,5 +47,11 @@ public class IOCTest_Profile {
         applicationContext.register(MainConfigOfProfile.class);
         //4.启动刷新容器
         applicationContext.refresh();
+
+        String[] names = applicationContext.getBeanNamesForType(DataSource.class);
+
+        for (String name : names) {
+            System.out.println(name);
+        }
     }
 }
