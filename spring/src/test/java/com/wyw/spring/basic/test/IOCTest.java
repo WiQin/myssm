@@ -33,7 +33,7 @@ public class IOCTest {
     public void ioc_set() {
 
         try {
-            String[] path = {"com/briup/ioc/set/set.xml"};
+            String[] path = {"com/wyw/spring/basicioc/set/set.xml"};
             ApplicationContext container =
                     new ClassPathXmlApplicationContext(path);
             Student stu1 = (Student)container.getBean("stu1");
